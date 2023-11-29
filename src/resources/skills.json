@@ -1,0 +1,122 @@
+  [
+    {
+      "title": "Frontend",
+      "items": [
+        {
+          "title": "React",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/react.png",
+          "alt": "Official React logo"
+        },
+        {
+          "title": "Angular",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/angular.png",
+          "alt": "Official Angular logo"
+        },
+        {
+          "title": "Astro",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/astro.png",
+          "alt": "Official Astro logo"
+        },
+        {
+          "title": "NextJS",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/nextjs.png",
+          "alt": "Official NextJS logo"
+        }
+      ]
+    },
+    {
+      "title": "Backend",
+      "items": [
+        {
+          "title": "Go",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/go.png",
+          "alt": "Official Go logo"
+        },
+        {
+          "title": "NodeJS",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/nodejs.png",
+          "alt": "Official NodeJS logo"
+        },
+        {
+          "title": "C#",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/csharp.png",
+          "alt": "Official C# logo"
+        },
+        {
+          "title": "Python",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/python.png",
+          "alt": "Official Python logo"
+        },
+        {
+          "title": "Java",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/java.png",
+          "alt": "Official Java logo"
+        }
+      ]
+    },
+    {
+      "title": "Fullstack",
+      "items": [
+        {
+          "title": "JavaScript",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/javascript.png",
+          "alt": "Official JavaScript logo"
+        },
+        {
+          "title": "TypeScript",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/typescript.png",
+          "alt": "Official TypeScript logo"
+        },
+        {
+          "title": "GraphQL",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/graphql.png",
+          "alt": "Official GraphQL logo"
+        }
+      ]
+    },
+    {
+      "title": "Database",
+      "items": [
+        {
+          "title": "PostgreSQL",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/postgresql.png",
+          "alt": "Official PostgreSQL logo"
+        },
+        {
+          "title": "MongoDB",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/mongodb.svg",
+          "alt": "Official MongoDB logo"
+        },
+        {
+          "title": "SQLite",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/sqlite.png",
+          "alt": "Official SQLite logo"
+        },
+        {
+          "title": "Redis",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/redis.svg",
+          "alt": "Official Redis logo"
+        }
+      ]
+    },
+    {
+      "title": "DevOps",
+      "items": [
+        {
+          "title": "Docker",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/docker.png",
+          "alt": "Official Docker logo"
+        },
+        {
+          "title": "Nginx",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/nginx.png",
+          "alt": "Official Nginx logo"
+        },
+        {
+          "title": "GitHub Actions",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/skill-icons/githubactions.png",
+          "alt": "Official GitHub Actions logo"
+        }
+      ]
+    }
+  ]

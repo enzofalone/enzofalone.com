@@ -1,31 +1,7 @@
 ---
-import SkillsContainer from './skill-group/SkillsContainer.astro';
+import skillsJson from '../../resources/skills.json';
 import SkillElement from './skill-group/SkillElement.astro';
-
-import reactImage from '../../resources/skill-icons/react.png';
-import angularImage from '../../resources/skill-icons/angular.png';
-import astroImage from '../../resources/skill-icons/astro.png';
-import nextJsLogo from '../../resources/skill-icons/nextjs.png';
-
-import javascriptLogo from '../../resources/skill-icons/javascript.png';
-import typescriptLogo from '../../resources/skill-icons/typescript.png';
-import graphqlLogo from '../../resources/skill-icons/graphql.png';
-
-import mongodbLogo from '../../resources/skill-icons/mongodb.svg';
-import postgresqlLogo from '../../resources/skill-icons/postgresql.png';
-import sqliteLogo from '../../resources/skill-icons/sqlite.png';
-import redisLogo from '../../resources/skill-icons/redis.svg';
-import cloudflareLogo from '../../resources/skill-icons/cloudflare.png';
-
-import goLogo from '../../resources/skill-icons/go.png';
-import nodejsLogo from '../../resources/skill-icons/nodejs.png';
-import csharpLogo from '../../resources/skill-icons/csharp.png';
-import pythonLogo from '../../resources/skill-icons/python.png';
-import javaLogo from '../../resources/skill-icons/java.png';
-
-import dockerLogo from '../../resources/skill-icons/docker.png';
-import nginxLogo from '../../resources/skill-icons/nginx.png';
-import githubActionsLogo from '../../resources/skill-icons/githubactions.png';
+import SkillsContainer from './skill-group/SkillsContainer.astro';
 ---
 
 <div id="skills">
@@ -33,104 +9,15 @@ import githubActionsLogo from '../../resources/skill-icons/githubactions.png';
     <h2>Skills</h2>
   </div>
   <div class="skill-container-list">
-    <SkillsContainer title="Frontend">
-      <SkillElement
-        title="React"
-        image={reactImage}
-        alt="Official React Logo"
-      />
-      <SkillElement
-        title="Angular"
-        image={angularImage}
-        alt="Official Angular Logo"
-      />
-      <SkillElement
-        title="Astro"
-        image={astroImage}
-        alt="Official Astro Logo"
-      />
-      <SkillElement
-        title="NextJS"
-        image={nextJsLogo}
-        alt="Official NextJS Logo"
-      />
-    </SkillsContainer>
-
-    <SkillsContainer title="Backend">
-      <SkillElement title="Go" image={goLogo} alt="Official Go Logo" />
-      <SkillElement
-        title="NodeJS"
-        image={nodejsLogo}
-        alt="Official NodeJS Logo"
-      />
-      <SkillElement title="C#" image={csharpLogo} alt="Official C# Logo" />
-      <SkillElement
-        title="Python"
-        image={pythonLogo}
-        alt="Official Python Logo"
-      />
-      <SkillElement title="Java" image={javaLogo} alt="Official Java Logo" />
-    </SkillsContainer>
-
-    <SkillsContainer title="Fullstack">
-      <SkillElement
-        title="JavaScript"
-        image={javascriptLogo}
-        alt="Official JavaScript Logo"
-      />
-      <SkillElement
-        title="Typescript"
-        image={typescriptLogo}
-        alt="Official Typescript Logo"
-      />
-      <SkillElement
-        title="GraphQL"
-        image={graphqlLogo}
-        alt="Official GraphQL Logo"
-      />
-    </SkillsContainer>
-
-    <SkillsContainer title="Database">
-      <SkillElement
-        title="PostgreSQL"
-        image={postgresqlLogo}
-        alt="Official PostgreSQL Logo"
-      />
-      <SkillElement
-        title="MongoDB"
-        image={mongodbLogo}
-        alt="Official MongoDB Logo"
-      />
-      <SkillElement
-        title="SQLite"
-        image={sqliteLogo}
-        alt="Official SQLite Logo"
-      />
-      <SkillElement
-        title="Redis"
-        image={redisLogo}
-        alt="Official Redis Logo"
-      />
-      <SkillElement
-        title="Cloudflare R2"
-        image={cloudflareLogo}
-        alt="Official Cloudflare Logo"
-      />
-    </SkillsContainer>
-
-    <SkillsContainer title="DevOps">
-      <SkillElement
-        title="Docker"
-        image={dockerLogo}
-        alt="Official Docker Logo"
-      />
-      <SkillElement title="Nginx" image={nginxLogo} alt="Official Nginx Logo" />
-      <SkillElement
-        title="Github Actions"
-        image={githubActionsLogo}
-        alt="Official Github Actions Logo"
-      />
-    </SkillsContainer>
+    {Object.values(skillsJson).map((skillGroup) => 
+     <SkillsContainer title={skillGroup.title}>
+      {
+        Object.values(skillGroup.items).map((skill) => 
+          <SkillElement title={skill.title} alt={skill.alt} image={skill.imgSrc}/>
+        )
+      }
+    </SkillsContainer> 
+    )}
   </div>
 </div>
 
