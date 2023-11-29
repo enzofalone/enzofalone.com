@@ -1,0 +1,124 @@
+---
+import { Image } from 'astro:assets';
+import personal from '../../resources/info.json';
+import Arrow from './Arrow.astro';
+---
+
+<main>
+  <div class="container">
+    <div class="info">
+      <h1>Enzo Falone</h1>
+      <h2>Aspiring Software Engineer</h2>
+    </div>
+
+    <div class="image-container">
+      <img class={"photo"} src={personal.myFaceUrl} alt={"Photo of Enzo Falone"} decoding="async" loading="lazy"/>
+    </div>
+  </div>
+  <div class="content-container">
+    <p class="content">
+      I am an aspiring Software Engineer that loves creating all sorts of
+      projects, playing rhythm videogames and riding motorcycles!
+    </p>
+  </div>
+  <div class="arrow-container">
+    <Arrow />
+  </div>
+</main>
+
+<style>
+  .container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-content: center;
+  }
+
+  .info {
+    display: flex;
+
+    flex: 1;
+    flex-direction: column;
+
+    justify-content: center;
+
+    color: var(--text-color);
+  }
+
+  .info > h1 {
+    font-size: 3.5rem;
+    background: #cfaebe;
+    background: linear-gradient(to right, #cfaebe 0%, #917ecf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    animation: wave 4s infinite;
+  }
+
+  .info > h2 {
+    font-size: 1.5rem;
+    background: #cfaebe;
+    background: linear-gradient(to right, #cfaebe 0%, #917ecf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    animation: wave 10s infinite;
+  }
+
+  @keyframes wave {
+    0% {
+      background-position: 0% center;
+    }
+    50% {
+      background-position: 100% center;
+    }
+    100% {
+      background-position: 0% center;
+    }
+  }
+
+  .image-container {
+    width: 20rem;
+  }
+
+  .image-container > img {
+    border-radius: 9999%;
+  }
+
+  .content-container {
+    margin-top: 128px;
+  }
+
+  .content {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .underline {
+    color: #cfaebe;
+  }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    padding-top: 8dvh;
+    height: 92dvh;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arrow-container {
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+</style>

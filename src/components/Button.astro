@@ -1,0 +1,43 @@
+---
+const { href } = Astro.props;
+---
+
+<style>
+  .button {
+    border: 1px solid hsla(0, 0%, 100%, 0.14);
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: var(--text-inactive-color);
+    transition: 200ms ease;
+  }
+
+  .button:hover {
+    border: 1px solid hsla(0, 0%, 100%, 0.384);
+    background-color: hsla(0, 0%, 100%, 0.103);
+    color: var(--text-color);
+  }
+</style>
+
+<anchor-button class="button" data-href={href}>
+  <a>
+    <slot />
+  </a>
+</anchor-button>
+
+<script>
+  class AnchorButton extends HTMLElement {
+    constructor() {
+      super();
+
+      const { href } = this.dataset;
+
+      const button = this.querySelector('a') as any;
+
+      if (button) {
+        button.href = href;
+      }
+    }
+  }
+
+  customElements.define('anchor-button', AnchorButton);
+</script>

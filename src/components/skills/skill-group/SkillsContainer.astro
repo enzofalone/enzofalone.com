@@ -1,0 +1,39 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="skill-container">
+  <div class="skill-header">
+    <span class="skill-title">{title}</span>
+  </div>
+  <div class="skill-list">
+    <slot />
+  </div>
+</div>
+<style>
+  .skill-container {
+    background-color: #192227;
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    flex-shrink: 1;
+    flex-basis: 30%;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .skill-header {
+    display: flex;
+  }
+
+  .skill-title {
+    color: var(--text-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+</style>

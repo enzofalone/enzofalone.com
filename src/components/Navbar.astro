@@ -1,0 +1,110 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../resources/logo.svg';
+
+const logoImageProps = {
+  src: logo,
+  alt: 'Cube Logo',
+};
+---
+
+<script>
+  var navbar = document.querySelector('#header-container');
+
+  window.onscroll = (event: Event) => {
+    if (navbar?.clientHeight && window.scrollY > navbar?.clientHeight) {
+      navbar.classList.add('scroll');
+    } else {
+      navbar?.classList.remove('scroll');
+    }
+  };
+</script>
+<div id="dummy-header"></div>
+<div id="header-container">
+  <div id="header">
+    <div class="logo-container">
+      <a href="/">
+        <Image {...logoImageProps} />
+      </a>
+    </div>
+    <div id="header-links">
+      <a class="link" href="/">Home</a>
+      <a class="link" href="#skills">Skills</a>
+      <a class="link" href="#projects">Projects</a>
+      <a id="button-contact" class="link" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  #dummy-header {
+    width: 100%;
+    height: 8dvh;
+  }
+
+  #header-container {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 8dvh;
+    transition: all 200ms;
+  }
+
+  #header {
+    width: 100%;
+    height: 8dvh;
+    min-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: auto;
+    display: flex;
+    max-width: var(--max-width);
+  }
+
+  .scroll {
+    background-color: rgb(25, 23, 41) !important;
+    filter: drop-shadow(0px 9px 15px #000);
+    z-index: 100;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.14);
+  }
+
+  #header-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    margin-left: auto;
+  }
+
+  #button-contact {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: var(--text-inactive-color);
+    transition: 200ms ease;
+  }
+
+  #button-contact:hover {
+    border: 1px solid var(--border-active);
+    background-color: hsla(0, 0%, 100%, 0.103);
+    color: var(--text-color);
+  }
+
+  .link {
+    color: var(--text-inactive-color);
+    font-size: 1rem;
+    transition: color 200ms ease;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    color: var(--text-color);
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+</style>

@@ -1,0 +1,31 @@
+---
+import Button from "./Button.astro";
+---
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 8rem;
+  }
+
+  .link {
+    color: var(--text-inactive-color);
+    font-size: 1rem;
+    transition: color 200ms ease;
+  }
+
+  .link:hover {
+    color: var(--text-color);
+  }
+</style>
+
+<div class="container">
+    <Button href="#">Blog</Button>
+    <Button href="#">Blog</Button>
+    <Button href="#">Blog</Button>
+    
+  
+</div>

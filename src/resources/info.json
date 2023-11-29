@@ -1,0 +1,16 @@
+{
+  "myFaceUrl": "https://avatars.githubusercontent.com/u/20959424?v=4",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/enzofalone/",
+    "github": "https://github.com/enzofalone",
+    "email": "enzofalone123@gmail.com"
+  },
+  "projects": [
+    {
+      "title": "RoomConnect",
+      "summary": "Full stack application made in Typescript + Go for Miami students to find compatible students through dynamic queries and a real-time chat",
+      "description": "This project was part of the INIT Build program for the Web Dev 3 group for the Fall '23 cohort. I was in charge of creating the general backend infrastructure, development and production environments, and the real-time chat using WebSockets and Redis.\n\nI had a great time learning about all of the technologies as it was my first time working with them!",
+      "pictures": []
+    }
+  ]
+}
