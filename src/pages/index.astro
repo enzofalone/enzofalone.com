@@ -2,16 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/hero/Hero.astro';
 import LineBreak from '../components/LineBreak.astro';
-import Skills from '../components/skills/skills.astro';
-import Projects from '../components/projects/Projects.astro';
+import ProjectsSection from '../components/projects/ProjectsSection.astro';
+import SkillsSection from '../components/skills/SkillsSection.astro';
 ---
-
-<style></style>
 
 <Layout title="Enzo Falone">
   <Hero />
   <LineBreak id="skills-section" />
-  <Skills />
-  <LineBreak id="projects-section"/>
-  <Projects />
+  <SkillsSection />
+  <LineBreak id="projects-section" />
+  <ProjectsSection />
 </Layout>
