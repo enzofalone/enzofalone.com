@@ -30,7 +30,8 @@ jobs:
         name: Install pnpm
         with:
           version: 8
-          run_install: false
+          run_install: true
+
       - name: Install, build, and upload your site
         uses: withastro/action@v1
         # with:
