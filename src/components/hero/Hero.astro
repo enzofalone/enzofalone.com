@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import personal from '../../resources/info.json';
 import Arrow from './Arrow.astro';
+import SocialMedia from './SocialMedia.astro';
 ---
 
 <main>
@@ -12,15 +13,23 @@ import Arrow from './Arrow.astro';
     </div>
 
     <div class="image-container">
-      <img class={"photo"} src={personal.myFaceUrl} alt={"Photo of Enzo Falone"} decoding="async" loading="lazy"/>
+      <img
+        class={'photo'}
+        src={personal.myFaceUrl}
+        alt={'Photo of Enzo Falone'}
+        decoding="async"
+        loading="lazy"
+      />
     </div>
   </div>
-  <div class="content-container">
-    <p class="content">
-      I am an aspiring Software Engineer that loves creating all sorts of
-      projects, playing rhythm videogames and riding motorcycles!
-    </p>
-  </div>
+  <SocialMedia />
+  <p class="content">
+    Hey there! I am a Computer Science student at <a
+      href="https://www.fiu.edu/"
+      target="_blank">Florida International University</a
+    > Student that loves creating all sorts of projects, playing rhythm
+    videogames and riding motorcycles!
+  </p>
   <div class="arrow-container">
     <Arrow />
   </div>
@@ -39,10 +48,8 @@ import Arrow from './Arrow.astro';
 
   .info {
     display: flex;
-
     flex: 1;
     flex-direction: column;
-
     justify-content: center;
 
     color: var(--text-color);
@@ -88,14 +95,16 @@ import Arrow from './Arrow.astro';
     border-radius: 9999%;
   }
 
-  .content-container {
-    margin-top: 128px;
-  }
-
   .content {
     color: var(--text-color);
     font-size: 1.5rem;
     text-align: center;
+    font-weight: lighter;
+  }
+
+  .content a {
+    color: var(--text-color);
+    text-decoration: solid underline #6f5f9e;
   }
 
   .underline {

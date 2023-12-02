@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import personal from '../../resources/info.json';
+
+const socialMediaList = personal.social;
+---
+
+<div id="social-media">
+  {
+    socialMediaList.map((socialMedia) => (
+      <a href={socialMedia.url} target="_blank">
+        <Image
+          alt={'Social Media Icon'}
+          src={socialMedia.imgSrc}
+          width={50}
+          height={50}
+        />
+      </a>
+    ))
+  }
+</div>
+
+<style>
+  div {
+    margin: 2rem auto 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  img {
+    width: 50px;
+    object-fit: cover;
+  }
+
+  a {
+    transition: transform 0.2s;
+  }
+
+  a:hover {
+    transform: scale(1.2);
+  }
+</style>
