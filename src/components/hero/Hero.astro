@@ -7,13 +7,10 @@ import SocialMedia from './SocialMedia.astro';
 
 <main>
   <div class="container">
-    <div class="info">
-      <h1>Enzo Falone</h1>
-      <h2>Aspiring Software Engineer</h2>
-    </div>
-
     <div class="image-container">
-      <img
+      <Image
+        width="200"
+        height="200"
         class={'photo'}
         src={personal.myFaceUrl}
         alt={'Photo of Enzo Falone'}
@@ -21,15 +18,19 @@ import SocialMedia from './SocialMedia.astro';
         loading="lazy"
       />
     </div>
+    <div class="wavy-animation">
+      <h1>Enzo Falone</h1>
+    </div>
+    
   </div>
-  <SocialMedia />
   <p class="content">
     Hey there! I am a Computer Science student at <a
       href="https://www.fiu.edu/"
       target="_blank">Florida International University</a
-    > Student that loves creating all sorts of projects, playing rhythm
-    videogames and riding motorcycles!
+    > that loves creating all sorts of projects, playing rhythm videogames and
+    riding motorcycles!
   </p>
+  <SocialMedia />
   <div class="arrow-container">
     <Arrow />
   </div>
@@ -40,13 +41,12 @@ import SocialMedia from './SocialMedia.astro';
     width: 100%;
 
     display: flex;
-    flex-direction: row;
-
     justify-content: center;
-    align-content: center;
+    place-items: center;
+    flex-direction: column;
   }
 
-  .info {
+  .wavy-animation {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -55,17 +55,18 @@ import SocialMedia from './SocialMedia.astro';
     color: var(--text-color);
   }
 
-  .info > h1 {
-    font-size: 3.5rem;
+  .wavy-animation > h1 {
+    font-size: 4rem;
     background: #cfaebe;
     background: linear-gradient(to right, #cfaebe 0%, #917ecf 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 1000;
     animation: wave 4s infinite;
+    margin: 2rem;
   }
-
-  .info > h2 {
+/* 
+  .wavy-animation > h2 {
     font-size: 1.5rem;
     background: #cfaebe;
     background: linear-gradient(to right, #cfaebe 0%, #917ecf 100%);
@@ -74,7 +75,7 @@ import SocialMedia from './SocialMedia.astro';
     font-weight: bolder;
     animation: wave 10s infinite;
   }
-
+ */
   @keyframes wave {
     0% {
       background-position: 0% center;
@@ -88,8 +89,8 @@ import SocialMedia from './SocialMedia.astro';
   }
 
   .image-container {
-    width: 20rem;
-  }
+    width: 10rem;
+  5}
 
   .image-container > img {
     border-radius: 9999%;
