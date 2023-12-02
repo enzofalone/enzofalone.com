@@ -3,6 +3,7 @@
     "title": "RoomConnect",
     "summary": "Full stack application made in Typescript + Go for Miami students to find compatible students through dynamic queries and a real-time chat.",
     "description": "This project was part of the INIT Build program for the Web Dev 3 group for the Fall '23 cohort. I was in charge of creating the general backend infrastructure, development and production environments, and the real-time chat using WebSockets and Redis.\n\nI had a great time learning about all of the technologies as it was my first time working with them and working with 5 other teammates!",
+    "githubUrl": "https://github.com/lesterfernandez/roomconnect",
     "previewPicture": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/roomconnect/landing.png",
     "pictures": [
       "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/roomconnect/landing.png",
@@ -11,15 +12,38 @@
     ]
   },
   {
+    "title": "Chat App",
+    "summary": "Chat App made using ReactJS, Express.js, Socket.io, and MongoDB to communicate with other in real-time users eliminating the anonimity barrier by using Google Auth 2.0!",
+    "description": "This personal project was my first project using WebSockets. I had a lot of fun and it is heavily inspired by Discord/Slack by also having workspaces and channels as well as a message delivery system!",
+    "githubUrl": "https://github.com/enzofalone/chat-app",
+    "previewPicture": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/chat-app/copying-workspace-to-clipboard.png",
+    "pictures": [
+      "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/chat-app/login-screen.png",
+      "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/chat-app/copying-workspace-to-clipboard.png",
+      "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/chat-app/messaging.png"
+    ]
+  },
+  {
     "title": "Autolog",
-    "summary": "Full stack application made in ReactJS for tech savvy autoshop owners to migrate from pen and paper to a basic yet complete inventory in the cloud.",
+    "summary": "Full stack application made using the PERN stack for tech savvy autoshop owners to migrate from pen and paper to a basic yet complete inventory in the cloud.",
     "description": "This project was my final project for my internship at Workday x CodePath. It includes many advanced features such as: creation of invoices, members, graphs, inventories, roles and even processing of invoices' PDF's for customers.\n\nThis was my biggest project in 2022 and I am very proud of it as I went from design + wireframe, developing the infrastructure of the frontend and backend to deploying it along two more team members.",
+    "githubUrl": "https://github.com/trillion-dollar-baby/autolog",
     "previewPicture": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/autolog/create.png",
     "pictures": [
       "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/autolog/inventory.png",
       "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/autolog/create.png",
       "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/autolog/invoice.png",
       "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/autolog/invoice2.png"
+    ]
+  },
+  {
+    "title": "Student Store",
+    "summary": "Mock Student store featuring receipts, items, cost calculation and search queries through different categories in the store!",
+    "githubUrl": "https://github.com/enzofalone/student-store",
+    "description": "This was one of my first React projects and had a lot of fun creating tons of features in the span of 3 days! This was part of my internship at CodePath x Workday",
+    "previewPicture": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/student-store/preview.gif",
+    "pictures": [
+      "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/project-screenshots/student-store/preview.gif"
     ]
   }
 ]

@@ -7,7 +7,8 @@
     },
     {
       "url": "https://github.com/enzofalone",
-      "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/social-icons/github.png"
+      "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/social-icons/github-dark.png",
+      "style": "filter: invert(100%);"
     },
     {
       "url": "mailto:enzofalone123@gmail.com",
