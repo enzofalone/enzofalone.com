@@ -44,7 +44,11 @@ const { title, summary, previewPicture, githubUrl } = Astro.props;
     color: var(--text-color);
   }
 
-  h2 {
+  .project-preview-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
     margin-bottom: 1rem;
+    gap: 10px;
   }
-</style>
+  </style>
