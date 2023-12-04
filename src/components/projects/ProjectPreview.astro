@@ -1,11 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-const { title, summary, previewPicture } = Astro.props;
+const { title, summary, previewPicture, githubUrl } = Astro.props;
 ---
 
 <div class="project-preview">
   <div class="project-preview-header">
     <h2>{title}</h2>
+  <a href={githubUrl}><span>Github</span></a>
   </div>
   <Image
     class={'project-preview-img'}
