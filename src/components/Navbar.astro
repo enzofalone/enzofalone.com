@@ -24,7 +24,7 @@ const logoImageProps = {
   <div id="header">
     <div class="logo-container">
       <a href="/">
-        <Image {...logoImageProps} />
+        <Image class="logo" {...logoImageProps} />
       </a>
     </div>
     <div id="header-links">
@@ -58,7 +58,6 @@ const logoImageProps = {
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    margin: auto;
     display: flex;
     max-width: var(--max-width);
   }
@@ -107,4 +106,9 @@ const logoImageProps = {
     display: flex;
     align-items: center;
   }
+
+  .logo {
+    height: 48px;
+  }
+
 </style>

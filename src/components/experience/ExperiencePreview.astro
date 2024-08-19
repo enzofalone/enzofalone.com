@@ -1,22 +1,18 @@
 ---
 import { Image } from 'astro:assets';
-const { title, summary, previewPicture, githubUrl } = Astro.props;
+const { title, company, companyImgUrl, date } = Astro.props;
 ---
 
-<div class="project-preview">
-  <div class="project-preview-header">
-    <h2>{title}</h2>
-  <a href={githubUrl}><span>Github</span></a>
+<div class="experience-preview">
+  <div class="title-container">
+    <div class="company-info">
+      <img class="company-logo" src={companyImgUrl} />
+      <h2>{company}</h2>
+    </div>
+    <h4 class="title">{title}</h4>
   </div>
-  <Image
-    class={'project-preview-img'}
-    src={previewPicture}
-    alt={'Project image'}
-    width={1200}
-    height={720}
-  />
-  <div class="project-preview-body">
-    <p>{summary}</p>
+  <div class="date-container">
+    <p>{date}</p>
   </div>
 </div>
 
@@ -24,31 +20,46 @@ const { title, summary, previewPicture, githubUrl } = Astro.props;
   * {
     color: var(--text-color);
   }
-  .project-preview {
-    background-color: #192227;
-    padding: 0.5rem;
+  .experience-preview {
+    display: flex;
+    background-color: #263238;
     border-radius: 5px;
-    margin-bottom: 2rem;
+    padding: 10px;
+    gap: 10px;
+  }
+  .experience-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #263238;
+    border-radius: 5px;
+    flex-grow: 1;
+    padding: 10px;
+    flex-basis: 40%;
   }
 
-  .project-preview-img {
-    width: 100%;
+  .company-info {
+    display: flex;
+    gap: 1rem;
+    max-height: 48px;
+    align-items: center;
+  }
+
+  .company-logo {
+    width: 32px;
     height: fit-content;
-    border-radius: 5px;
     object-fit: contain;
   }
 
-  .project-preview-body {
-    margin-top: 1rem;
-    font-size: 16px;
-    color: var(--text-color);
+  .title-container {
+    margin-bottom: 10px;
   }
 
-  .project-preview-header {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    margin-bottom: 1rem;
-    gap: 10px;
+  .title {
+    margin-top: 10px;
   }
-  </style>
+  .date-container{
+    display: flex;
+    place-items: center;
+    margin-left: auto;
+  }
+</style>
