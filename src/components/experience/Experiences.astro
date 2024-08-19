@@ -3,18 +3,18 @@ import experiences from '../../resources/experiences.json';
 import ExperiencePreview from './ExperiencePreview.astro';
 ---
 
-<section id="projects">
-  <div class="projects-header">
-    <h2>Projects</h2>
+<section id="experiences">
+  <div class="experiences-header">
+    <h2>Experience</h2>
   </div>
-  <div class="projects-container">
+  <div class="experiences-container">
     {
       experiences.map((experience) => (
         <ExperiencePreview
-          title={project.title}
-          summary={project.summary}
-          previewPicture={project.previewPicture}
-          githubUrl={project.githubUrl}
+          company={experience.company}
+          title={experience.title}
+          date={experience.date}
+          companyImgUrl={experience.companyImgUrl}
         />
       ))
     }
@@ -27,7 +27,17 @@ import ExperiencePreview from './ExperiencePreview.astro';
     color: var(--text-color);
   }
 
-  .projects-header {
+  .experiences-header {
     margin-bottom: 2rem;
+  }
+
+  .experiences-container {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px;
+    background-color: #192227;
+    border-radius:5px;
   }
 </style>

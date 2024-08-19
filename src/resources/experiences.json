@@ -3,8 +3,7 @@
     "company": "Google",
     "companyImgUrl": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/experiences/company-icons/google.svg",
     "title": "Software Engineering Intern",
-    "date": "August 2024 - November 2024",
-    "technologies": ["Angular", "GCP Cloud Run", "GCP Storage", "TypeScript"],
+    "date": "Aug 2024 - Nov 2024",
     "summary": [
         "Currently interning in Google Cloud Storage at Trusted Partner Cloud team"
     ]
@@ -13,10 +12,9 @@
     "company": "Slack",
     "companyImgUrl": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/experiences/company-icons/slack.svg",
     "title": "Software Engineering Intern",
-    "date": "May 2024 - August 2024",
-    "technologies": ["React", "Jest", "Hack", "TypeScript"],
+    "date": "May 2024 - Aug 2024",
     "summary": [
-        "Designed and implemented tracing tools to report +100M daily traces and analyze user errors in the frontend infrastructure for network/overall service health analytics (TypeScript, React, Hack, Jest).",
+        "Designed and implemented tracing tools to report +100M daily traces and analyze user errors in the frontend infrastructure for network/overall service health analytics.",
         "Streamlined monitoring of impacted users across all platforms by communicating with stakeholders, teams, and direct responsible individuals by establishing standard telemetry conventions.",
         "Created dashboards and queries in Grafana using PromQL and Honeycomb queries to analyze collected traces and create alerts against breaking changes in every new client build."
     ]
@@ -25,8 +23,7 @@
     "company": "Illinois Tool Works",
     "companyImgUrl": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/experiences/company-icons/itw.svg",
     "title": "Software Development Intern",
-    "date": "May 2023 - August 2023",
-    "technologies": ["JIRA", "GraphQL", "ASP.NET", "SQL Server", "Angular", "Redux (NgRx)"],
+    "date": "May 2023 - Aug 2023",
     "summary": [
         "Conducted meetings, communicated with cross-functional team members. Proposed implementations and improvements to senior team members and product owners in Scrum team (JIRA, Azure DevOps).",
         "Engineered notification microservice API using GraphQL, ASP.NET and SQL Server. Connected to an internal dashboard using Angular and Redux (NgRx).",
@@ -38,7 +35,6 @@
     "companyImgUrl": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/experiences/company-icons/workday.svg",
     "title": "Full Stack Development Intern",
     "date": "June 2022 - August 2022",
-    "technologies": ["React", "Node.js", "PostgreSQL", "Express"],
     "summary": [
         "Selected into a cohort of 35 interns out of 1800 applicants into CodePath's SITE program, an intense 10-week internship focused in full stack development including: Front-end, back-end, testing, design, and deployment.",
         "Upgraded and modernized notification system from front-end to back-end for +7000 customers to receive native Windows notifications. Added metrics and surveys for the marketing team."
