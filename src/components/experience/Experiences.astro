@@ -1,0 +1,33 @@
+---
+import experiences from '../../resources/experiences.json';
+import ExperiencePreview from './ExperiencePreview.astro';
+---
+
+<section id="projects">
+  <div class="projects-header">
+    <h2>Projects</h2>
+  </div>
+  <div class="projects-container">
+    {
+      experiences.map((experience) => (
+        <ExperiencePreview
+          title={project.title}
+          summary={project.summary}
+          previewPicture={project.previewPicture}
+          githubUrl={project.githubUrl}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  h2 {
+    font-size: 36px;
+    color: var(--text-color);
+  }
+
+  .projects-header {
+    margin-bottom: 2rem;
+  }
+</style>

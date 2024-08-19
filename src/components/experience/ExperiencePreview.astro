@@ -1,0 +1,54 @@
+---
+import { Image } from 'astro:assets';
+const { title, summary, previewPicture, githubUrl } = Astro.props;
+---
+
+<div class="project-preview">
+  <div class="project-preview-header">
+    <h2>{title}</h2>
+  <a href={githubUrl}><span>Github</span></a>
+  </div>
+  <Image
+    class={'project-preview-img'}
+    src={previewPicture}
+    alt={'Project image'}
+    width={1200}
+    height={720}
+  />
+  <div class="project-preview-body">
+    <p>{summary}</p>
+  </div>
+</div>
+
+<style>
+  * {
+    color: var(--text-color);
+  }
+  .project-preview {
+    background-color: #192227;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .project-preview-img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+    object-fit: contain;
+  }
+
+  .project-preview-body {
+    margin-top: 1rem;
+    font-size: 16px;
+    color: var(--text-color);
+  }
+
+  .project-preview-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    gap: 10px;
+  }
+  </style>
