@@ -8,7 +8,8 @@ const { title, summary, previewPicture, githubUrl } = Astro.props;
     <h2>{title}</h2>
   <a href={githubUrl}><span>Github</span></a>
   </div>
-  <Image
+  <Image 
+    loading={"lazy"}
     class={'project-preview-img'}
     src={previewPicture}
     alt={'Project image'}
