@@ -6,7 +6,15 @@ const { title, company, companyImgUrl, date } = Astro.props;
 <div class="experience-preview">
   <div class="title-container">
     <div class="company-info">
-      <img class="company-logo" src={companyImgUrl} />
+      <Image
+        width={150}
+        height={150}
+        alt={`Company logo of ${company}`}
+        loading={'lazy'}
+        decoding={'async'}
+        class="company-logo"
+        src={companyImgUrl}
+      />
       <h2>{company}</h2>
     </div>
     <h4 class="title">{title}</h4>
@@ -50,11 +58,10 @@ const { title, company, companyImgUrl, date } = Astro.props;
     object-fit: contain;
   }
 
-
   .title {
     margin-top: 10px;
   }
-  .date-container{
+  .date-container {
     display: flex;
     place-items: center;
     margin-left: auto;
