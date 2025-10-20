@@ -2,10 +2,21 @@
   {
     "company": "Google",
     "companyImgUrl": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/experiences/company-icons/google.svg",
+    "title": "Software Engineer",
+    "date": "Jun 2025 - Present",
+    "summary": [
+      "Currently working at Cloud Service Mesh, under GCP Networking. A Google Kubernetes Engine feature which enables service discovery, traffic routing, and observability at scale by the use of Envoy proxies.",
+      "Built and maintained alerting systems to monitor and alert about propagation health across distributed systems to ensure consistency across regionalized services (GCP, C++, Golang, Kubernetes).",
+      "Optimized and modernized end-to-end testing framework for the team, enabling a modern automatic cluster setup and detecting pre-configured clusters, resulting in a reduced runtime of 50% (30 to 15 minutes)."
+    ]
+  },
+  {
+    "company": "Google",
+    "companyImgUrl": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/experiences/company-icons/google.svg",
     "title": "Software Engineering Intern",
     "date": "Aug 2024 - Nov 2024",
     "summary": [
-        "Currently interning in Google Cloud Storage at Trusted Partner Cloud team"
+      "Currently interning in Google Cloud Storage at Trusted Partner Cloud team"
     ]
   },
   {
@@ -14,9 +25,9 @@
     "title": "Software Engineering Intern",
     "date": "May 2024 - Aug 2024",
     "summary": [
-        "Designed and implemented tracing tools to report +100M daily traces and analyze user errors in the frontend infrastructure for network/overall service health analytics.",
-        "Streamlined monitoring of impacted users across all platforms by communicating with stakeholders, teams, and direct responsible individuals by establishing standard telemetry conventions.",
-        "Created dashboards and queries in Grafana using PromQL and Honeycomb queries to analyze collected traces and create alerts against breaking changes in every new client build."
+      "Designed and implemented tracing tools to report +100M daily traces and analyze user errors in the frontend infrastructure for network/overall service health analytics.",
+      "Streamlined monitoring of impacted users across all platforms by communicating with stakeholders, teams, and direct responsible individuals by establishing standard telemetry conventions.",
+      "Created dashboards and queries in Grafana using PromQL and Honeycomb queries to analyze collected traces and create alerts against breaking changes in every new client build."
     ]
   },
   {
@@ -25,9 +36,9 @@
     "title": "Software Development Intern",
     "date": "May 2023 - Aug 2023",
     "summary": [
-        "Conducted meetings, communicated with cross-functional team members. Proposed implementations and improvements to senior team members and product owners in Scrum team (JIRA, Azure DevOps).",
-        "Engineered notification microservice API using GraphQL, ASP.NET and SQL Server. Connected to an internal dashboard using Angular and Redux (NgRx).",
-        "Upgraded and modernized notification system from front-end to back-end for +7000 customers to receive native Windows notifications. Added metrics and surveys for the marketing team."
+      "Conducted meetings, communicated with cross-functional team members. Proposed implementations and improvements to senior team members and product owners in Scrum team (JIRA, Azure DevOps).",
+      "Engineered notification microservice API using GraphQL, ASP.NET and SQL Server. Connected to an internal dashboard using Angular and Redux (NgRx).",
+      "Upgraded and modernized notification system from front-end to back-end for +7000 customers to receive native Windows notifications. Added metrics and surveys for the marketing team."
     ]
   },
   {
@@ -36,8 +47,8 @@
     "title": "Full Stack Development Intern",
     "date": "June 2022 - August 2022",
     "summary": [
-        "Selected into a cohort of 35 interns out of 1800 applicants into CodePath's SITE program, an intense 10-week internship focused in full stack development including: Front-end, back-end, testing, design, and deployment.",
-        "Upgraded and modernized notification system from front-end to back-end for +7000 customers to receive native Windows notifications. Added metrics and surveys for the marketing team."
+      "Selected into a cohort of 35 interns out of 1800 applicants into CodePath's SITE program, an intense 10-week internship focused in full stack development including: Front-end, back-end, testing, design, and deployment.",
+      "Upgraded and modernized notification system from front-end to back-end for +7000 customers to receive native Windows notifications. Added metrics and surveys for the marketing team."
     ]
   }
 ]
