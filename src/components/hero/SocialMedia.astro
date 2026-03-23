@@ -8,7 +8,7 @@ const socialMediaList = personal.social;
 <div id="social-media">
   {
     socialMediaList.map((socialMedia) => (
-      <a href={socialMedia.url} target="_blank">
+      <a href={socialMedia.url} target="_blank" rel="noopener noreferrer">
         <Image
           alt={'Social Media Icon'}
           src={socialMedia.imgSrc}
