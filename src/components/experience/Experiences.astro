@@ -12,10 +12,8 @@ import ExperiencePreview from './ExperiencePreview.astro';
       experiences.map((experience) => (
         <ExperiencePreview
           company={experience.company}
-          title={experience.title}
-          date={experience.date}
           companyImgUrl={experience.companyImgUrl}
-          summary={experience.summary}
+          positions={experience.positions}
         />
       ))
     }
