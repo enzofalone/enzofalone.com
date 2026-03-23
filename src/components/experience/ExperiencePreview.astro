@@ -45,8 +45,9 @@ const { title, company, companyImgUrl, date } = Astro.props;
 
   .company-logo {
     width: 32px;
-    height: fit-content;
+    height: 32px;
     object-fit: contain;
+    flex-shrink: 0;
   }
 
   .title {
