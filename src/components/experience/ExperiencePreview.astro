@@ -1,10 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-const { title, company, companyImgUrl, date } = Astro.props;
+const { title, company, companyImgUrl, date, summary } = Astro.props;
 ---
 
 <div class="experience-preview">
-  <div class="title-container">
+  <div class="experience-header">
     <div class="company-info">
       <Image
         width={150}
@@ -15,52 +15,103 @@ const { title, company, companyImgUrl, date } = Astro.props;
         class="company-logo"
         src={companyImgUrl}
       />
-      <h2>{company}</h2>
+      <span class="company-name">{company}</span>
     </div>
-    <h4 class="title">{title}</h4>
+    <span class="date">{date}</span>
   </div>
-  <div class="date-container">
-    <p>{date}</p>
-  </div>
+
+  <h3 class="job-title">{title}</h3>
+
+  {summary && summary.length > 0 && (
+    <ul class="summary-list">
+      {summary.map((item: string) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  )}
 </div>
 
 <style>
-  * {
-    color: var(--text-color);
-  }
   .experience-preview {
-    display: flex;
     background-color: var(--card-bg);
-    border-radius: 5px;
-    padding: 10px;
-    gap: 10px;
+    border: 1px solid var(--border);
+    border-left: 2px solid hsla(270, 50%, 65%, 0.5);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: border-color 200ms ease;
+  }
+
+  .experience-preview:hover {
+    border-color: var(--border-active);
+    border-left-color: hsla(270, 50%, 65%, 0.8);
+  }
+
+  .experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 
   .company-info {
     display: flex;
-    gap: 1rem;
-    max-height: 48px;
     align-items: center;
+    gap: 0.625rem;
   }
 
-
-  .title {
-    margin-top: 10px;
+  .company-name {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1rem;
   }
-  .date-container {
+
+  .date {
+    color: var(--text-inactive-color);
+    font-size: 0.8125rem;
+    white-space: nowrap;
+  }
+
+  .job-title {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    opacity: 0.85;
+  }
+
+  .summary-list {
+    margin-top: 0.25rem;
+    padding-left: 1.125rem;
     display: flex;
-    place-items: center;
-    margin-left: auto;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .summary-list li {
+    color: var(--text-inactive-color);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 640px) {
+    .experience-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.375rem;
+    }
   }
 </style>
 
 <style is:global>
   .company-info img {
     flex-shrink: 0;
-    width: 32px;
-    height: 32px;
-    max-width: 32px;
-    max-height: 32px;
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     object-fit: contain;
   }
 </style>

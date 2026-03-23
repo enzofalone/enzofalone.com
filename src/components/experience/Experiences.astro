@@ -15,6 +15,7 @@ import ExperiencePreview from './ExperiencePreview.astro';
           title={experience.title}
           date={experience.date}
           companyImgUrl={experience.companyImgUrl}
+          summary={experience.summary}
         />
       ))
     }
@@ -33,16 +34,12 @@ import ExperiencePreview from './ExperiencePreview.astro';
 
   #experiences {
     content-visibility: auto;
-    contain-intrinsic-size: auto 400px;
+    contain-intrinsic-size: auto 600px;
   }
 
   .experiences-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap: 10px;
-
-    padding: 10px;
-    background-color: var(--card-bg-dark);
-    border-radius:5px;
+    gap: 0.75rem;
   }
 </style>
