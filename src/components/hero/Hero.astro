@@ -15,7 +15,8 @@ import SocialMedia from './SocialMedia.astro';
         src={personal.myFaceUrl}
         alt={'Photo of Enzo Falone'}
         decoding="async"
-        loading="lazy"
+        loading="eager"
+        fetchpriority="high"
       />
     </div>
     <div class="wavy-animation">
