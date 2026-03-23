@@ -26,10 +26,16 @@ const { title, summary, previewPicture, githubUrl } = Astro.props;
     color: var(--text-color);
   }
   .project-preview {
-    background-color: var(--card-bg-dark);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
     padding: 0.5rem;
-    border-radius: 5px;
     margin-bottom: 2rem;
+    transition: border-color 200ms ease;
+  }
+
+  .project-preview:hover {
+    border-color: var(--border-active);
   }
 
 

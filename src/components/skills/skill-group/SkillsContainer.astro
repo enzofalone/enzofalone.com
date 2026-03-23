@@ -12,12 +12,18 @@ const { title } = Astro.props;
 </div>
 <style>
   .skill-container {
-    background-color: var(--card-bg-dark);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
     height: 100%;
     padding: 0.5rem;
-    border-radius: 5px;
+    border-radius: 8px;
     flex-shrink: 1;
     flex-basis: 30%;
+    transition: border-color 200ms ease;
+  }
+
+  .skill-container:hover {
+    border-color: var(--border-active);
   }
 
   .skill-list {
