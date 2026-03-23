@@ -43,11 +43,13 @@ const { title, company, companyImgUrl, date } = Astro.props;
     align-items: center;
   }
 
-  .company-logo {
+  .company-info :global(img) {
+    flex-shrink: 0;
     width: 32px;
     height: 32px;
+    max-width: 32px;
+    max-height: 32px;
     object-fit: contain;
-    flex-shrink: 0;
   }
 
   .title {
