@@ -4,88 +4,55 @@ const { title, summary, previewPicture, githubUrl } = Astro.props;
 ---
 
 <div class="project-preview">
-  <div class="project-header">
-    <h3 class="project-title">{title}</h3>
-    <a
-      href={githubUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={`${title} GitHub repository`}
-      class="github-link"
-    >GitHub</a>
+  <div class="project-preview-header">
+    <h2>{title}</h2>
+  <a href={githubUrl} target="_blank" rel="noopener noreferrer" aria-label={`${title} GitHub repository`}><span>Github</span></a>
   </div>
-  <Image
+  <Image 
     loading={"lazy"}
+    class={'project-preview-img'}
     src={previewPicture}
-    alt={`${title} preview`}
+    alt={'Project image'}
     width={1200}
     height={720}
   />
-  <p class="project-summary">{summary}</p>
+  <div class="project-preview-body">
+    <p>{summary}</p>
+  </div>
 </div>
 
 <style>
+  * {
+    color: var(--text-color);
+  }
   .project-preview {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border);
-    border-left: 2px solid hsla(270, 50%, 65%, 0.45);
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: border-color 200ms ease;
+    background-color: var(--card-bg-dark);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
   }
 
-  .project-preview:hover {
-    border-color: var(--border-active);
-    border-left-color: hsla(270, 50%, 65%, 0.8);
-  }
 
-  .project-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.875rem 1.25rem 0.75rem;
-  }
-
-  .project-title {
+  .project-preview-body {
+    margin-top: 1rem;
+    font-size: 16px;
     color: var(--text-color);
-    font-size: 0.9375rem;
-    font-weight: 600;
   }
 
-  .github-link {
-    color: var(--text-inactive-color);
-    font-size: 0.8125rem;
-    text-decoration: none;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 2px 10px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    transition: color 200ms ease, border-color 200ms ease;
+  .project-preview-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    gap: 10px;
   }
-
-  .github-link:hover {
-    color: var(--text-color);
-    border-color: var(--border-active);
-  }
-
-  .project-summary {
-    color: var(--text-inactive-color);
-    font-size: 0.8125rem;
-    line-height: 1.6;
-    padding: 0.75rem 1.25rem 1rem;
-  }
-</style>
+  </style>
 
 <style is:global>
   .project-preview img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
     display: block;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
   }
 </style>
