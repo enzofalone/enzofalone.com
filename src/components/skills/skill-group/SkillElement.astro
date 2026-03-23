@@ -34,7 +34,10 @@ const { title, image, alt } = Astro.props;
     margin: auto 15px;
   }
 
-  .skill-element :global(img) {
+</style>
+
+<style is:global>
+  .skill-element img {
     flex-shrink: 0;
     margin: auto 0;
     width: 32px;

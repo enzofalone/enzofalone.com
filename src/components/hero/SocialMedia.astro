@@ -29,13 +29,6 @@ const socialMediaList = personal.social;
     gap: 10px;
   }
 
-  a :global(img) {
-    width: 32px;
-    height: 32px;
-    max-width: 32px;
-    max-height: 32px;
-    object-fit: contain;
-  }
 
   a {
     transition: transform 0.2s;
@@ -47,5 +40,15 @@ const socialMediaList = personal.social;
 
   .invert {
     filter: invert(100%);
+  }
+</style>
+
+<style is:global>
+  #social-media img {
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    object-fit: contain;
   }
 </style>

@@ -100,12 +100,6 @@ import SocialMedia from './SocialMedia.astro';
     color: #cfaebe;
   }
 
-  .image-container :global(img) {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
 
   main {
     padding-top: 8dvh;
@@ -129,5 +123,15 @@ import SocialMedia from './SocialMedia.astro';
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-10px);}
     60% {transform: translateY(-10px);}
+  }
+</style>
+
+<style is:global>
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 9999px;
   }
 </style>
