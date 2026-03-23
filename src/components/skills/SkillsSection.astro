@@ -45,8 +45,12 @@ import SkillsContainer from './skill-group/SkillsContainer.astro';
   .skill-container-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     gap: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .skill-container-list {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
