@@ -10,11 +10,11 @@ const socialMediaList = personal.social;
     socialMediaList.map((socialMedia) => (
       <a href={socialMedia.url} target="_blank" rel="noopener noreferrer">
         <Image
-          alt={'Social Media Icon'}
+          alt={`${socialMedia.name} icon`}
           src={socialMedia.imgSrc}
           width={64}
           height={64}
-          style={socialMedia.style}
+          class={socialMedia.invertColors ? 'invert' : ''}
         />
       </a>
     ))
@@ -41,5 +41,9 @@ const socialMediaList = personal.social;
 
   a:hover {
     transform: scale(1.2);
+  }
+
+  .invert {
+    filter: invert(100%);
   }
 </style>

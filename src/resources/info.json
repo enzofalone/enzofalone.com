@@ -2,15 +2,18 @@
   "myFaceUrl": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/me.jpg",
   "social": [
     {
+      "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/enzofalone/",
       "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/social-icons/linkedin.png"
     },
     {
+      "name": "GitHub",
       "url": "https://github.com/enzofalone",
       "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/social-icons/github-dark.png",
-      "style": "filter: invert(100%);"
+      "invertColors": true
     },
     {
+      "name": "Gmail",
       "url": "mailto:enzofalone123@gmail.com",
       "imgSrc": "https://cdn.jsdelivr.net/gh/enzofalone/enzofalone.com/assets/social-icons/gmail.png"
     }
