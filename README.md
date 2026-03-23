@@ -1,4 +1,4 @@
-## Enzo-Astro
+## enzofalone.com
 
 New personal website built using Astro and a new design.
 
