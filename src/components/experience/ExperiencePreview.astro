@@ -30,19 +30,10 @@ const { title, company, companyImgUrl, date } = Astro.props;
   }
   .experience-preview {
     display: flex;
-    background-color: #263238;
+    background-color: var(--card-bg);
     border-radius: 5px;
     padding: 10px;
     gap: 10px;
-  }
-  .experience-info {
-    display: flex;
-    flex-direction: column;
-    background-color: #263238;
-    border-radius: 5px;
-    flex-grow: 1;
-    padding: 10px;
-    flex-basis: 40%;
   }
 
   .company-info {

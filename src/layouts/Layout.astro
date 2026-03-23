@@ -47,6 +47,9 @@ const { title } = Astro.props;
 
     --border: hsla(0, 0%, 100%, 0.14);
     --border-active: hsla(0, 0%, 100%, 0.384);
+
+    --card-bg: #263238;
+    --card-bg-dark: #192227;
   }
 
   * {
@@ -70,14 +73,6 @@ const { title } = Astro.props;
   body::-webkit-scrollbar-track {
     background-color: rgb(var(--theme-background));
   }
-
-  /* ::-webkit-scrollbar-track-piece:start {
-    background: transparent url('../resources/scrollbar.png') repeat-y !important;
-  }
-
-  ::-webkit-scrollbar-track-piece:end {
-    background: transparent url('../resources/scrollbar.png') repeat-y !important;
-  } */
 
   body::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.15);
