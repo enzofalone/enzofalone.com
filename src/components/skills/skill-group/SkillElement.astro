@@ -1,54 +1,67 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 const { title, image, alt } = Astro.props;
 ---
 
 <div class="skill-element">
-  <Image
-    class="skill-image img-crisp"
-    width={32}
-    height={32}
-    src={image}
-    alt={alt}
-    loading={'lazy'}
-    decoding={'async'}
-  />
-  <span class="skill-title">{title}</span>
+    <span class="skill-icon">
+        <Image
+            class="skill-image img-crisp"
+            width={64}
+            height={64}
+            fit="contain"
+            src={image}
+            alt={alt}
+            loading={"eager"}
+            decoding={"async"}
+        />
+    </span>
+    <span class="skill-title">{title}</span>
 </div>
 
 <style>
-  .skill-element {
-    display: flex;
+    .skill-element {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        height: 56px;
+        background-color: var(--card-bg);
+        border: 1px solid var(--border);
+        padding: 10px;
+        border-radius: 8px;
+        transition: border-color 200ms ease;
+        overflow: hidden;
+    }
 
-    width: 100%;
-    height: 56px;
-    background-color: var(--card-bg);
-    border: 1px solid var(--border);
-    padding: 10px;
-    border-radius: 8px;
-    transition: border-color 200ms ease;
-  }
+    .skill-element:hover {
+        border-color: var(--border-active);
+    }
 
-  .skill-element:hover {
-    border-color: var(--border-active);
-  }
+    /* Fixed-size box the icon can never grow past, independent of how
+     Astro's image service renders the <img> in dev vs. prod. */
+    .skill-icon {
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+    }
 
-  .skill-title {
-    color: var(--text-color);
-    font-size: 20px;
-    margin: auto 15px;
-  }
-
+    .skill-title {
+        color: var(--text-color);
+        font-size: 20px;
+    }
 </style>
 
 <style is:global>
-  .skill-element img {
-    flex-shrink: 0;
-    margin: auto 0;
-    width: 32px;
-    height: 32px;
-    max-width: 32px;
-    max-height: 32px;
-    object-fit: contain;
-  }
+    .skill-element .skill-icon img {
+        display: block;
+        width: 32px;
+        height: 32px;
+        max-width: 32px;
+        max-height: 32px;
+        object-fit: contain;
+    }
 </style>
